@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 100vh;
+  background-color: hsl(185, 75%, 39%);
+}
+
+
+
+/* Footer */
+.attribution {
+  font-size: 11px;
+  margin-top: 8%;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
