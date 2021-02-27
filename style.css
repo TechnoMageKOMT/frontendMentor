@@ -9,7 +9,6 @@
 
 body {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
@@ -18,13 +17,80 @@ body {
 }
 
 
+/* Card */
+.master-flex {
+  display: flex;
+  justify-content: center;
+}
 
-/* Footer */
+.card-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4%;
+  height: 400px;
+  width: 400px;
+  border-radius: 10px;
+  background-image: url('images/bg-pattern-card.svg');
+}
+
+.card-wrapper img {
+  position:relative;
+  border-radius: 50%;
+  top:50px;
+  z-index: 1
+}
+
+.card-contents {
+  position: relative;
+  background-color: whitesmoke;
+  width: 400px;
+}
+
+.card-title {
+  text-align: center;
+  padding-top: 70px;
+  padding-bottom: 20px;
+}
+
+.card-body {
+  position: ;
+  display: flex;
+  justify-content: space-around;
+  padding: 40px;
+}
+
+.scores {
+  font-weight: 700;
+}
+
+.abstract-image {
+  z-index: -1;
+}
+
 .attribution {
+  display: block;
   font-size: 11px;
-  margin-top: 8%;
+  position: absolute;
+  bottom: 10px;
+  width: 100vw;
+  text-align: center;
+  
 }
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+.top {
+  position: absolute;
+  top: -400px;
+  left: -400px
+}
+
+.btm {
+  position: absolute;
+  bottom: -400px;
+  right: -400px;
 }
