@@ -5,13 +5,50 @@
     <!-- displays site properly based on user's device -->
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png" />
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
     <title>Frontend Mentor | Profile card component</title>
   </head>
   <!-- Flexbox body to get card and footer into a centered column -->
   <body>
-
+    <img src="images/bg-pattern-top.svg" alt="" class="img-top-left" />
+    <div class="flex">
+      <!--Flex to get card-top and card-body in acolumn-->
+      <div class="card-top"></div>
+      <!--bg-pattern-card as background-->
+      <img
+        class="profile"
+        src="images/image-victor.jpg"
+        alt="Profile photo of Victor Crest"
+      />
+      <div class="card-body">
+        <!--Flex to get name and stats evenly spaced into a column-->
+        <div class="name">
+          <p class="text-bold">Victor Crest <span>26</span></p>
+          <p>London</p>
+        </div>
+        <div class="stats">
+          <!--Flex to get children divs in an evenly spaced row-->
+          <div class="followers">
+            <p class="text-bold">80K</p>
+            <p>Followers</p>
+          </div>
+          <div class="likes">
+            <p class="text-bold">803K</p>
+            <p>Likes</p>
+          </div>
+          <div class="photos">
+            <p class="text-bold">1.4K</p>
+            <p>Photos</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="images/bg-pattern-bottom.svg" alt="" class="img-btm-right" />
   </body>
-  <!-- End of body flexbox -->
 </html>
