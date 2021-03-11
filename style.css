@@ -26,7 +26,14 @@ body {
   height: 350px;
   justify-content: space-between;
   position: relative;
-  width: 25%;
+  max-width: 360px;
+  min-width: 360px;
+}
+
+@media (max-width: 375px) {
+  .flex {
+    min-width: 340px;
+  }
 }
 
 .card-top {
@@ -58,11 +65,28 @@ span {
   position: fixed;
 }
 
+@media (max-width: 375px) {
+  .img-top-left {
+    width: 600px;
+    bottom: 60%;
+    left: -400px;
+    position: fixed;
+  }
+}
+
 .img-btm-right {
   position: fixed;
   right: -25%;
   top: 25%;
   z-index: -1;
+}
+
+@media (max-width: 375px) {
+  .img-btm-right {
+    width: 600px;
+    top: 60%;
+    right: -400px;
+  }
 }
 
 .card-body {
