@@ -58,6 +58,7 @@ span {
 }
 
 .profile {
+  border: 6px solid white;
   border-radius: 50%;
   left: calc(50% - 50px);
   position: absolute;
